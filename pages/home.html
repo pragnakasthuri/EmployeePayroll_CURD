@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/payroll_home.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,600;1,500&display=swap"
+            rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <title>Employee Payroll App</title>
+    <script defer src="../js/emp_payroll_home.js"></script>
+</head>
+<body>
+    <!--------UC1-------->
+    <header class="header-content header">
+        <div class="logo-content">
+            <img src="../assets/images/logo.png">
+            <div>
+                <span class="emp-text">EMPLOYEE</span> <br>
+                <span class="emp-text emp-payroll">PAYROLL</span>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-content">
+        <!--------UC2------->    
+        <div class="header-content">
+            <div class="emp-detail-text">
+                Employee Details <div class="emp-count"> 10 </div>
+            </div>
+            <a href="payroll_form.html" class="add-button">
+                <img src="../assets/icons/add-24px.svg"> Add User </a>
+            </div>
+        <div class="table-main"></div>
+            <table id="table-display" class="table">
+                <!--------UC3-------->
+                <tr>
+                    <th></th>
+                    <th> Name </th>
+                    <th> Gender </th>
+                    <th> Department </th>
+                    <th> Salary </th>
+                    <th> Start Date </th>
+                    <th> Actions </th>
+                   </tr>
+                   <tr>
+                     <td><img class="profile" alt="" src="../assets/profile-images/Ellipse -1.png"></td>
+                     <td>Pragna Kasthuri</td>
+                     <td>Female</td>
+                     <td><div class="dept-label">Engineer</div><div class="dept-label">Full stack Developer</div></td>
+                     <td>4000000</td>
+                     <td>5 Febuary 2021</td>
+                     <td>
+                        <img id="1" onclick="remove(this)" src="../assets/icons/delete-black-18dp.svg" alt = "delete">
+                        <img id="1" onclick="update(this)" src="../assets/icons/create-black-18dp.svg" alt = "edit">
+                     </td>
+                   </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
